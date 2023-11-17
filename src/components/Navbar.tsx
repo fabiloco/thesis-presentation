@@ -1,13 +1,11 @@
-import Link from 'next/link';
-
 import React, { FC } from 'react';
 
 export const Navbar = () => {
   return (
-    <nav>
+    <nav className='absolute bg-white w-full'>
       <ul className='flex w-full'>
         <NavbarLink to='/' content='Inicio' />
-        <NavbarLink to='/introduction' content='Introducción' />
+        <NavbarLink to='#introduccion' content='Introducción' />
       </ul>
     </nav>
   );
@@ -21,7 +19,7 @@ type NavbarLink = {
 const NavbarLink: FC<NavbarLink> = ({ to, content }) => {
   return (
     <li className='px-2 py-1'>
-      <Link href={to}>{content}</Link>
+      <a href={to}>{content}</a>
     </li>
   );
 };

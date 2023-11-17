@@ -1,4 +1,3 @@
-'use client';
 import { FaChevronDown } from 'react-icons/fa';
 
 import React, { FC, ReactNode, useState } from 'react';
