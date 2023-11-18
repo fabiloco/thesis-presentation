@@ -1,12 +1,13 @@
 import { ImageAccordionGridItem, ImageAccordionGrid } from '../components';
 
+import introductionImg from '../assets/introduction.jpg';
+
 export const Introduction = () => {
   const introductionContent: ImageAccordionGridItem[] = [
     {
       title: 'Introducción',
       accordeonTitle: 'Ver más',
-      imageSrc:
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/RedCat_8727.jpg/1200px-RedCat_8727.jpg',
+      imageSrc: introductionImg,
       itemContent: (
         <>
           <p>
