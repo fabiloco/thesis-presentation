@@ -1,6 +1,6 @@
 import { ExpectedImpactItem } from "../components";
 import "../index.css";
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+
 export const ExpectedImpact = () => {
   const data = [
     {
