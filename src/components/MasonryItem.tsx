@@ -1,8 +1,8 @@
-import React from "react";
+import { ReactNode } from "react";
 import "../index.css";
 
 interface MasonryItemProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 export const ExpectedImpactItem: React.FC<MasonryItemProps> = ({

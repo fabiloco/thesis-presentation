@@ -8,6 +8,14 @@ export const ExpectedImpact = () => {
         <img src="https://source.unsplash.com/Nllx4R-2c3o" />
         <img src="https://source.unsplash.com/lp40q07DIe0" />
         <img src="https://source.unsplash.com/wfalq01jJuU" />
+        <img src="https://source.unsplash.com/bYuI23mnmDQ" />
+        <img src="https://source.unsplash.com/Nllx4R-2c3o" />
+        <img src="https://source.unsplash.com/lp40q07DIe0" />
+        <img src="https://source.unsplash.com/wfalq01jJuU" />
+        <img src="https://source.unsplash.com/bYuI23mnmDQ" />
+        <img src="https://source.unsplash.com/Nllx4R-2c3o" />
+        <img src="https://source.unsplash.com/lp40q07DIe0" />
+        <img src="https://source.unsplash.com/wfalq01jJuU" />
       </div>
     </div>
   );
