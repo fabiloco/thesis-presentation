@@ -1,3 +1,4 @@
 export * from './Home';
 export * from './Introduction';
-export * from './ExpectedImpact'
+export * from './ExpectedImpact';
+export * from './NewTechnologies';
