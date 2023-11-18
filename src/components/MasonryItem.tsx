@@ -1,16 +1,17 @@
-import { ReactNode } from "react";
 import "../index.css";
 
 interface MasonryItemProps {
-  children: ReactNode;
+  title: string;
+  color: number;
 }
 
-export const ExpectedImpactItem: React.FC<MasonryItemProps> = ({
-  children,
-}) => {
+export const ExpectedImpactItem = (props: MasonryItemProps) => {
   return (
-    <div className="masonry-item columns-1 gap-5 sm:columns-2 sm:gap-8 md:columns-3 lg:columns-4 [&>img:not(:first-child)]:mt-8">
-      {children}
+    <div
+      className={`bg-blue-500 ${props.color} h-36 m-4 w-42 font-bold text-lg hover:underline underline-offset-2 decoration-2
+       decoration-blue-500 transition-all flex justify-center items-center`}
+    >
+      {props.title}
     </div>
   );
 };
