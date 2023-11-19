@@ -1,5 +1,11 @@
-import { Navbar, ExpectedImpactItem } from './components';
-import { ExpectedImpact, Home, Introduction, NewTechnologies } from './pages';
+import { Navbar, ExpectedImpactItem } from "./components";
+import {
+  ExpectedImpact,
+  Home,
+  Introduction,
+  NewTechnologies,
+  Objectives,
+} from "./pages";
 
 function App() {
   return (
@@ -8,7 +14,8 @@ function App() {
       <Home />
       <Introduction />
       <NewTechnologies />
-      <ExpectedImpact />
+      {/*  <ExpectedImpact /> */}
+      <Objectives />
     </>
   );
 }
