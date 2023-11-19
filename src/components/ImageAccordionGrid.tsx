@@ -1,4 +1,4 @@
-import React, { FC, ReactNode } from 'react';
+import React, { FC, Fragment, ReactNode } from 'react';
 import { Accordeon } from './Accordeon';
 
 export type ImageAccordionGridItem = {
@@ -20,7 +20,7 @@ export const ImageAccordionGrid: FC<ImageAccordionGrid> = ({ id, content }) => {
         ({ title, accordeonTitle, itemContent, imageSrc }, index) => {
           if (index % 2 === 0) {
             return (
-              <>
+              <Fragment key={index}>
                 <div className='h-full'>
                   <img
                     className='object-cover w-full min-h-[480px]'
@@ -33,11 +33,11 @@ export const ImageAccordionGrid: FC<ImageAccordionGrid> = ({ id, content }) => {
                   </h2>
                   <Accordeon header={accordeonTitle}>{itemContent}</Accordeon>
                 </div>
-              </>
+              </Fragment>
             );
           } else {
             return (
-              <>
+              <Fragment key={index}>
                 <div className='w-full h-full flex flex-col justify-center px-24 py-24'>
                   <h2 className='text-white text-5xl font-bold mb-4'>
                     {title}
@@ -50,7 +50,7 @@ export const ImageAccordionGrid: FC<ImageAccordionGrid> = ({ id, content }) => {
                     src={imageSrc}
                   />
                 </div>
-              </>
+              </Fragment>
             );
           }
         },

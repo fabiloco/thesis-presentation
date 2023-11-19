@@ -1,11 +1,12 @@
-import { Navbar, ExpectedImpactItem } from "./components";
+import { Navbar, ExpectedImpactItem } from './components';
 import {
+  DesignStages,
   ExpectedImpact,
   Home,
   Introduction,
   NewTechnologies,
   Objectives,
-} from "./pages";
+} from './pages';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <NewTechnologies />
       {/*  <ExpectedImpact /> */}
       <Objectives />
+      <DesignStages />
     </>
   );
 }

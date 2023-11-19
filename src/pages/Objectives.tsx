@@ -21,8 +21,8 @@ export const Objectives = () => {
       >
         <ObjectiveCard isGeneral text={data.general} />
 
-        {data.especificos.map((item) => (
-          <ObjectiveCard isGeneral={false} text={item} />
+        {data.especificos.map((item, index) => (
+          <ObjectiveCard key={index} isGeneral={false} text={item} />
         ))}
 
         {/* <div className="row-span-2 bg-red-500 "></div>
