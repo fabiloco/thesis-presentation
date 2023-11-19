@@ -13,10 +13,16 @@ export const Card: FC<CardProps> = ({
   imageSrc,
   isVideo,
 }) => {
+  console.log({ isVideo });
   return (
     <div className='flex flex-col relative  bg-red-100 w-[512px] h-96 group cursor-pointer'>
       {isVideo ? (
-        <video src={imageSrc} />
+        <video
+          className='absolute top-0 w-full h-full object-cover z-10'
+          autoPlay
+          muted
+          src={imageSrc}
+        />
       ) : (
         <img
           src={imageSrc}
