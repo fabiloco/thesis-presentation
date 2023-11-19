@@ -6,6 +6,7 @@ import {
   Introduction,
   NewTechnologies,
   Objectives,
+  ThesisForm,
 } from './pages';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <NewTechnologies />
       {/*  <ExpectedImpact /> */}
       <Objectives />
+      <ThesisForm />
       <DesignStages />
     </>
   );
