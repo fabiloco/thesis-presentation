@@ -1,8 +1,8 @@
-import { FaChevronDown } from 'react-icons/fa';
+import { FaChevronDown } from "react-icons/fa";
 
-import React, { FC, ReactNode, useState } from 'react';
+import React, { FC, ReactNode, useState } from "react";
 
-type AccordeonProps = {
+export type AccordeonProps = {
   header: string;
   children: ReactNode;
 };
@@ -12,22 +12,22 @@ export const Accordeon: FC<AccordeonProps> = ({ header, children }) => {
 
   const toggleOpen = () => onOpen((prevState) => !prevState);
 
-  const buttonIconClass = open ? 'rotate-180' : 'rotate-0';
+  const buttonIconClass = open ? "rotate-180" : "rotate-0";
 
   return (
     <>
       <div
-        className='flex justify-between w-full pb-2 border-2 border-transparent border-b-neutral-50 cursor-pointer'
+        className="flex justify-between items-center w-full border-2 border-transparent border-b-neutral-50 cursor-pointer"
         onClick={toggleOpen}
       >
-        <h4 className='font-semibold text-2xl text-white'>{header}</h4>
+        <h4 className="font-semibold text-2xl text-white">{header}</h4>
 
         <div className={`${buttonIconClass} transition-all`}>
-          <FaChevronDown color='#fff' />
+          <FaChevronDown color="#fff" />
         </div>
       </div>
 
-      {open && <div className='w-full text-white text-md mt-6'>{children}</div>}
+      {open && <div className="w-full text-white text-md mt-6">{children}</div>}
     </>
   );
 };

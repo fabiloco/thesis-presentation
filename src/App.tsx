@@ -1,10 +1,10 @@
-import { Navbar, ExpectedImpactItem } from "./components";
+import { Navbar } from "./components";
 import {
-  ExpectedImpact,
   Home,
   Introduction,
   NewTechnologies,
   Objectives,
+  ThesisForm,
 } from "./pages";
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
       <NewTechnologies />
       {/*  <ExpectedImpact /> */}
       <Objectives />
+      <ThesisForm />
     </>
   );
 }
