@@ -1,6 +1,6 @@
 import { CardWithIcon, CardWithIconProps } from '../components';
 
-import { FaBookReader, FaPencilAlt, FaCity } from 'react-icons/fa';
+import { FaBookReader, FaPencilAlt, FaCity, FaUserEdit } from 'react-icons/fa';
 import { IoHardwareChipSharp, IoMegaphone } from 'react-icons/io5';
 
 export const Recomendations = () => {
@@ -14,8 +14,12 @@ export const Recomendations = () => {
       icon: <IoHardwareChipSharp size='12em' />,
     },
     {
-      title: 'Educación del cliente, Evaluación de ROI',
+      title: 'Educación del cliente',
       icon: <FaPencilAlt size='10em' />,
+    },
+    {
+      title: 'Evaluación de ROI',
+      icon: <FaUserEdit size='10em' />,
     },
     {
       title: 'Sensibilización y divulgación',

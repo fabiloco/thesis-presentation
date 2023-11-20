@@ -1,5 +1,7 @@
 import { FormDesplegableItem } from '../components/FormDesplegableItem';
 
+import { Image } from '@nextui-org/image';
+
 import image1 from '../assets/thesisForm/image1.png';
 import image2 from '../assets/thesisForm/image2.png';
 import image3 from '../assets/thesisForm/image3.png';
@@ -46,7 +48,7 @@ export const ThesisForm = () => {
           {data.map(({ q, image }) => (
             <FormDesplegableItem header={q} textColor='white'>
               <div className='flex justify-center items-center'>
-                <img className='w-4/5' src={image} alt='' />
+                <Image className='w-4/5' src={image} alt='' />
               </div>
             </FormDesplegableItem>
           ))}
