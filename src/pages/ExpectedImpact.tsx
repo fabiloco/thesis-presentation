@@ -1,23 +1,30 @@
-import { ExpectedImpactItem } from '../components';
+import { FaPersonCircleCheck ,FaMoneyBillTrendUp, FaTree, FaEarthAmericas, FaComputer } from "react-icons/fa6";
+import { SiHtmlacademy } from "react-icons/si";
+
+import { CardWithIcon } from '../components';
 import '../index.css';
 
 export const ExpectedImpact = () => {
   const data = [
     {
       title: 'Área Social',
-      icon: '',
+      icon:<FaPersonCircleCheck  size="5em"/>,
     },
     {
       title: 'Área Económica',
+      icon: <FaMoneyBillTrendUp size="5em"/>
     },
     {
       title: 'Área Ambiental',
+      icon: <FaTree size="5em"/>
     },
     {
       title: 'Área Académica y Científica',
+      icon: <FaEarthAmericas size="10em"/>
     },
     {
       title: 'Área Tecnológica y Cultural',
+      icon: <FaComputer size="5em"/>
     },
   ];
   return (
@@ -29,9 +36,11 @@ export const ExpectedImpact = () => {
           </h2>
         </div>
 
-        <div className='flex flex-row w-full justify-center items-center'>
-          {data.map(({ title }) => (
-            <ExpectedImpactItem title={title} />
+        <div className='flex flex-row w-full justify-center items-center gap-3'>
+          {data.map(({ title, icon }, index) => (
+            /*  <ExpectedImpactItem title={title} /> */
+              <CardWithIcon icon={icon} index={index} title={title} />
+            
           ))}
         </div>
       </section>{' '}
