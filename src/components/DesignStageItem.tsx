@@ -62,11 +62,11 @@ export const DesignStageItem: FC<DesignStageItemProps> = ({
 
   return (
     <div
-      className={`flex w-full h-screen ${
+      className={`flex w-full min-h-screen ${
         index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
       }`}
     >
-      <div className='flex items-center w-full h-full bg-neutral-200 z-30'>
+      <div className='flex items-center w-full min-h-screen bg-neutral-200 z-30'>
         <h3 className='text-6xl w-auto leading-1 font-bold text-blue-800/80 mx-4 text-center'>
           {stage}
         </h3>

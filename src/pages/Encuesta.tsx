@@ -40,14 +40,6 @@ export const ThesisForm = () => {
         <h2 className='text-4xl font-bold underline underline-offset-3 decoration-4 underline-offset-4 decoration-blue-500'>
           Encuestas
         </h2>
-        <p className='w-[512px] text-center text-lg'>
-          En un mundo impulsado por la revolución digital del siglo XX, la
-          integración de tecnología digital ha transformado la arquitectura. La
-          convergencia de lo dinámico y lo digital ha potenciado la creatividad,
-          cambiando la forma en que los arquitectos conciben proyectos. El
-          rápido desarrollo de herramientas digitales ha sido fundamental en
-          este cambio.
-        </p>
       </div>
       <div className='flex justify-center items-center w-full bg-white z-30'>
         <div className='flex gap-4 flex-col w-full max-w-7xl'>

@@ -1,6 +1,8 @@
-import { FaChevronDown } from 'react-icons/fa';
-
 import { FC, ReactNode, useState } from 'react';
+
+import { AnimatePresence, motion } from 'framer-motion';
+
+import { FaChevronDown } from 'react-icons/fa';
 
 export type AccordeonProps = {
   header: string;
@@ -34,7 +36,18 @@ export const Accordeon: FC<AccordeonProps> = ({
         </div>
       </div>
 
-      {open && <div className={`w-full text-md mt-6 ${color}`}>{children}</div>}
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ height: 0, opacity: 0, y: -100 }}
+            animate={{ height: 'fit-content', opacity: 100, y: 0 }}
+            exit={{ height: 0, opacity: 0, y: -100 }}
+            className={`w-full text-md mt-6 ${color}`}
+          >
+            {children}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 };

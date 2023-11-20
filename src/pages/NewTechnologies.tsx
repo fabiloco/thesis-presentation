@@ -62,12 +62,6 @@ export const NewTechnologies = () => {
     },
   ];
 
-  // style={{
-  //   backgroundImage: 'radial-gradient(#F00 1px, #00000000 1px)',
-  //   backgroundSize: '20px 20px',
-  //   opacity: '0.4',
-  //   height: '100%',
-  // }}
   return (
     <section id='newTechnologies' className='mx-auto max-w-6xl mt-4'>
       <div className='py-40 flex justify-center items-center flex-col gap-8'>
