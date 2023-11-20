@@ -16,7 +16,12 @@ export const Card: FC<CardProps> = ({
   return (
     <div className='flex flex-col relative  bg-red-100 w-[512px] h-96 group cursor-pointer'>
       {isVideo ? (
-        <video src={imageSrc} />
+        <video
+          className='absolute top-0 w-full h-full object-cover z-10'
+          autoPlay
+          muted
+          src={imageSrc}
+        />
       ) : (
         <img
           src={imageSrc}
@@ -28,7 +33,7 @@ export const Card: FC<CardProps> = ({
         <h4 className='font-bold text-3xl mb-4 group-hover:-translate-y-9 transition-all'>
           {title}
         </h4>
-        <p className='group-hover:-translate-y-9 transition-all'>
+        <p className='group-hover:-translate-y-9 transition-all line-clamp-3 group-hover:line-clamp-none'>
           {description}
         </p>
       </div>

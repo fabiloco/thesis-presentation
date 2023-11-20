@@ -1,6 +1,7 @@
 import { Navbar } from "./components";
 import {
-  ConclusionsCarousel,
+  DesignStages,
+  ExpectedImpact,
   Home,
   Introduction,
   NewTechnologies,
@@ -15,10 +16,10 @@ function App() {
       <Home />
       <Introduction />
       <NewTechnologies />
-      {/*  <ExpectedImpact /> */}
+      <ExpectedImpact />
       <Objectives />
+      <DesignStages />
       <ThesisForm />
-      <ConclusionsCarousel />
     </>
   );
 }

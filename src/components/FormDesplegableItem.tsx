@@ -1,5 +1,5 @@
-import { FC } from "react";
-import { Accordeon, AccordeonProps } from "./Accordeon";
+import { FC } from 'react';
+import { Accordeon, AccordeonProps } from './Accordeon';
 
 export const FormDesplegableItem: FC<AccordeonProps> = ({
   header,
@@ -7,8 +7,11 @@ export const FormDesplegableItem: FC<AccordeonProps> = ({
 }) => {
   return (
     <>
-      <div className="bg-blue-700 rounded-lg px-5 py-2">
-        <Accordeon header={header}> {children}</Accordeon>
+      <div className='text-black px-8 py-6 border border-blue-500/50 rounded'>
+        <Accordeon header={header} textColor='black'>
+          {' '}
+          {children}
+        </Accordeon>
       </div>
     </>
   );
