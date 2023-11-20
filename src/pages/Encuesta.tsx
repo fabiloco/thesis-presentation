@@ -1,6 +1,6 @@
 import { FormDesplegableItem } from '../components/FormDesplegableItem';
 
-import { Image } from '@nextui-org/image';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import image1 from '../assets/thesisForm/image1.png';
 import image2 from '../assets/thesisForm/image2.png';
@@ -48,7 +48,12 @@ export const ThesisForm = () => {
           {data.map(({ q, image }) => (
             <FormDesplegableItem header={q} textColor='white'>
               <div className='flex justify-center items-center'>
-                <Image className='w-4/5' src={image} alt='' />
+                <LazyLoadImage
+                  className='w-4/5'
+                  width={'100%'}
+                  src={image}
+                  alt=''
+                />
               </div>
             </FormDesplegableItem>
           ))}
