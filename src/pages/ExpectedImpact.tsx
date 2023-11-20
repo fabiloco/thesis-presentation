@@ -4,20 +4,20 @@ import '../index.css';
 export const ExpectedImpact = () => {
   const data = [
     {
-      title: 'Area Social',
+      title: 'Área Social',
       icon: '',
     },
     {
-      title: 'Area Economica',
+      title: 'Área Económica',
     },
     {
-      title: 'Area Ambiental',
+      title: 'Área Ambiental',
     },
     {
-      title: 'Area Academica y Cientifica',
+      title: 'Área Académica y Científica',
     },
     {
-      title: 'Area Tecnologica y Cultural',
+      title: 'Área Tecnológica y Cultural',
     },
   ];
   return (
