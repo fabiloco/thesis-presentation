@@ -49,6 +49,7 @@ export const ThesisForm = () => {
             <FormDesplegableItem header={q} textColor='white'>
               <div className='flex justify-center items-center'>
                 <LazyLoadImage
+                  loading='eager'
                   className='w-4/5'
                   width={'100%'}
                   src={image}
