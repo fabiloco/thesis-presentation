@@ -1,13 +1,7 @@
-import { PieChart, FormDesplegableItem, PieChartProps } from '../components';
+import { PieChart, FormDesplegableItem } from '../components';
 
-type ThesisFormData = [
-  {
-    q: string;
-    chart: PieChartProps;
-  },
-];
 export const ThesisForm = () => {
-  const data: ThesisFormData = [
+  const data = [
     {
       q: '¿Has oído hablar de tecnologías utilizadas en arquitectura y construcción, como software de diseño, impresión 3D, drones, realidad virtual, inteligencia artificial (IA) u otras?',
       chart: {

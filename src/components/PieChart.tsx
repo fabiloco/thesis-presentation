@@ -29,10 +29,8 @@ import { Chart } from 'react-google-charts';
 //   ],
 // };
 
-type PieChartDatasets = [string, string | number];
-
 export type PieChartProps = {
-  data: Array<PieChartDatasets>;
+  data: any;
 };
 
 // export const data2 = [
