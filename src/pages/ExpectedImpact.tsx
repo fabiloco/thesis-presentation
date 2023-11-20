@@ -22,10 +22,10 @@ export const ExpectedImpact = () => {
   ];
   return (
     <>
-      <section id='newTechnologies' className='mx-auto max-w-6xl mt-4'>
+      <section id='expectedImpact' className='mx-auto max-w-6xl mt-4'>
         <div className='pt-40 pb-28 flex justify-center items-center flex-col gap-8'>
           <h2 className='text-4xl font-bold underline underline-offset-3 decoration-4 underline-offset-4 decoration-blue-500'>
-            Nuevas tecnologías
+            Impacto esperado
           </h2>
         </div>
 

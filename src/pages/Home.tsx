@@ -16,7 +16,7 @@ export const Home = () => {
         <span className='underline underline-offset-3 decoration-8 decoration-blue-400 dark:decoration-blue-600'>
           tecnológicas
         </span>{' '}
-        como apoyo al inicio de los procesos de diseño y construcción.
+        como apoyo al inicio de los procesos de diseño y construcción
       </motion.h1>
       <motion.p
         initial={{ opacity: 0, y: 1000 }}
@@ -24,7 +24,7 @@ export const Home = () => {
         transition={{ duration: 2, delay: 2 }}
         className='text-3xl mt-4'
       >
-        Valentina Paternina
+        Valentina Paternina Hernandez
       </motion.p>
     </section>
   );
