@@ -4,3 +4,4 @@ export * from './ExpectedImpact';
 export * from './NewTechnologies';
 export * from './Objectives'
 export * from './Encuesta'
+export * from  './Conclusions'

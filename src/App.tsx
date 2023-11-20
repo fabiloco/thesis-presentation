@@ -1,5 +1,6 @@
 import { Navbar } from "./components";
 import {
+  ConclusionsCarousel,
   Home,
   Introduction,
   NewTechnologies,
@@ -17,6 +18,7 @@ function App() {
       {/*  <ExpectedImpact /> */}
       <Objectives />
       <ThesisForm />
+      <ConclusionsCarousel />
     </>
   );
 }

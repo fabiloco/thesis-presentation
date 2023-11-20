@@ -1,6 +1,6 @@
 import { FaChevronDown } from "react-icons/fa";
 
-import React, { FC, ReactNode, useState } from "react";
+import { FC, ReactNode, useState } from "react";
 
 export type AccordeonProps = {
   header: string;
