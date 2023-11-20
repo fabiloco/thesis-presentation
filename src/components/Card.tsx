@@ -33,7 +33,7 @@ export const Card: FC<CardProps> = ({
         <h4 className='font-bold text-3xl mb-4 group-hover:-translate-y-9 transition-all'>
           {title}
         </h4>
-        <p className='group-hover:-translate-y-9 transition-all'>
+        <p className='group-hover:-translate-y-9 transition-all line-clamp-3 group-hover:line-clamp-none'>
           {description}
         </p>
       </div>

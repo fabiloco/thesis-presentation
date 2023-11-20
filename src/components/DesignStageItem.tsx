@@ -25,7 +25,7 @@ export const DesignStageItem: FC<DesignStageItemProps> = ({
   subStages,
   index,
 }) => {
-  if (index === 2) {
+  if (index === 3) {
     return (
       <div
         className={`flex flex-col w-full h-screen ${

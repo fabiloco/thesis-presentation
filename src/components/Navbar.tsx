@@ -8,8 +8,15 @@ export const Navbar = () => {
       <ul className='flex justify-center w-full'>
         <NavbarLink to='/' content='Inicio' />
         <NavbarLink to='#introduccion' content='Introducción' />
-        <NavbarLink to='#newTechnologies' content='Nuevas tecnologías' />
         <NavbarLink to='#expectedImpact' content='Impacto esperado' />
+        <NavbarLink to='#newTechnologies' content='Nuevas tecnologías' />
+        <NavbarLink to='#objectives' content='Objetivos' />
+        <NavbarLink
+          to='#designStates'
+          content='Etapas del diseño y construcción'
+        />
+        <NavbarLink to='#survey' content='Encuesta' />
+        <NavbarLink to='#conclusions' content='Conclusiones' />
       </ul>
     </nav>
   );

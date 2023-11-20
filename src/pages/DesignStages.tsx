@@ -6,8 +6,29 @@ import designStages5 from '../assets/designState5.mp4';
 import designStages6 from '../assets/designState6.mp4';
 import designStages7 from '../assets/designState7.mp4';
 import designStages8 from '../assets/designState8.mp4';
+import designStages9 from '../assets/designState9.gif';
 
 import representation1 from '../assets/representation1.jpeg';
+import representation2 from '../assets/representation2.jpeg';
+import representation3 from '../assets/representation3.jpeg';
+
+import representation4 from '../assets/representation4.png';
+import representation5 from '../assets/representation5.jpeg';
+
+import representation6 from '../assets/representation6.webp';
+import representation7 from '../assets/representation7.webp';
+import representation8 from '../assets/representation8.png';
+import representation9 from '../assets/representation9.webp';
+
+import representation10 from '../assets/representation10.jpeg';
+import representation11 from '../assets/representation11.jpeg';
+
+import representation12 from '../assets/representation12.jpeg';
+
+import representation13 from '../assets/representation13.png';
+import representation14 from '../assets/representation14.png';
+import representation15 from '../assets/representation15.png';
+
 import { StageItem, DesignStageItem } from '../components';
 
 export const DesignStages = () => {
@@ -24,7 +45,7 @@ export const DesignStages = () => {
           source: designStages1,
           isVideo: false,
           showButtom: true,
-          representations: [representation1],
+          representations: [representation1, representation2, representation3],
         },
         {
           title: '1.2. Planificacion y gestion ',
@@ -32,7 +53,7 @@ export const DesignStages = () => {
           source: designStages2,
           isVideo: false,
           showButtom: true,
-          representations: [''],
+          representations: [representation4, representation5],
         },
       ],
     },
@@ -50,7 +71,12 @@ export const DesignStages = () => {
           source: designStages3,
           isVideo: false,
           showButtom: true,
-          representations: [''],
+          representations: [
+            representation6,
+            representation7,
+            representation8,
+            representation9,
+          ],
         },
         {
           title: '2. Evaluación de la viabilidad de las ideas.',
@@ -58,7 +84,7 @@ export const DesignStages = () => {
           source: designStages4,
           isVideo: true,
           showButtom: true,
-          representations: [''],
+          representations: [representation10, representation11],
         },
         {
           title: '3. Discusión y revisión con el cliente.',
@@ -66,7 +92,7 @@ export const DesignStages = () => {
           source: designStages5,
           isVideo: true,
           showButtom: true,
-          representations: [''],
+          representations: [representation12],
         },
       ],
     },
@@ -74,28 +100,21 @@ export const DesignStages = () => {
       stage: '3. Diseño Esquemático',
       subStages: [
         {
-          title: '3.1.1. OpenBuildings Designer',
-          tools: [],
-          source: designStages6,
-          isVideo: true,
-          showButtom: false,
-          representations: [''],
-        },
-        {
-          title: '3.1.2 BricsCAD BIM',
-          tools: [],
-          source: designStages7,
-          isVideo: true,
-          showButtom: false,
-          representations: [''],
-        },
-        {
-          title: '3.1.3 Autodesk Reviti',
-          tools: [],
-          source: designStages8,
-          isVideo: true,
-          showButtom: false,
-          representations: [''],
+          title:
+            '3.1 Modelación de concepto espacial orientado a la estructura. ',
+          tools: [
+            '3.1.1. OpenBuildings Designer',
+            '3.1.2. BricsCAD BIM',
+            '3.1.3. Autodesk Revit',
+          ],
+          source: designStages9,
+          isVideo: false,
+          showButtom: true,
+          representations: [
+            representation13,
+            representation14,
+            representation15,
+          ],
         },
       ],
     },
@@ -103,10 +122,25 @@ export const DesignStages = () => {
       stage: '4. Construcción',
       subStages: [
         {
-          title:
-            '4.1. Proceso automatizado de fabricación de elementos de construcción o estructuras enteras mediante una impresora 3D',
-          tools: ['4.1.1 Hadrian-x', '4.1.2. Apis car', '4.1.3. Be more 3D'],
+          title: '4.1.1 Hadrian-x',
+          tools: [],
+          source: designStages8,
+          isVideo: true,
+          showButtom: false,
+          representations: [''],
+        },
+        {
+          title: '4.1.2. Apis car',
+          tools: [],
           source: designStages6,
+          isVideo: true,
+          showButtom: false,
+          representations: [''],
+        },
+        {
+          title: '4.1.3. Be more 3D',
+          tools: [],
+          source: designStages7,
           isVideo: true,
           showButtom: false,
           representations: [''],
@@ -116,18 +150,16 @@ export const DesignStages = () => {
   ];
 
   return (
-    <section id='designStages' className='w-full mt-4'>
+    <section id='designStates' className='w-full mt-4'>
       <div className='py-40 flex justify-center items-center flex-col gap-8 bg-white z-30'>
         <h2 className='text-4xl font-bold underline underline-offset-3 decoration-4 underline-offset-4 decoration-blue-500'>
-          Etapas de diseño
+          Etapas del diseño y construcción
         </h2>
         <p className='w-[512px] text-center text-lg'>
-          En un mundo impulsado por la revolución digital del siglo XX, la
-          integración de tecnología digital ha transformado la arquitectura. La
-          convergencia de lo dinámico y lo digital ha potenciado la creatividad,
-          cambiando la forma en que los arquitectos conciben proyectos. El
-          rápido desarrollo de herramientas digitales ha sido fundamental en
-          este cambio.
+          Este segmento establece una conexión entre las nuevas tecnologías y
+          las etapas del diseño arquitectónico, presentando una serie de
+          herramientas que contribuyen de manera significativa a los procesos de
+          diseño y construcción.
         </p>
       </div>
       <div className='flex justify-center items-center w-full bg-white z-30'>

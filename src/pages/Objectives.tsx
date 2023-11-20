@@ -14,6 +14,7 @@ export const Objectives = () => {
   return (
     <>
       <div
+        id='objectives'
         style={{
           height: 'calc(100vh - 72px)',
         }}

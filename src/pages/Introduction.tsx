@@ -33,8 +33,8 @@ export const Introduction = () => {
   ];
 
   return (
-    <>
+    <div className='text-white'>
       <ImageAccordionGrid id='introduccion' content={introductionContent} />
-    </>
+    </div>
   );
 };

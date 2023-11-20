@@ -62,17 +62,14 @@ export const NewTechnologies = () => {
     },
   ];
 
+  // style={{
+  //   backgroundImage: 'radial-gradient(#F00 1px, #00000000 1px)',
+  //   backgroundSize: '20px 20px',
+  //   opacity: '0.4',
+  //   height: '100%',
+  // }}
   return (
-    <section
-      style={{
-        backgroundImage: 'radial-gradient(#F00 1px, #00000000 1px)',
-        backgroundSize: '20px 20px',
-        opacity: '0.4',
-        height: '100%',
-      }}
-      id='newTechnologies'
-      className='mx-auto max-w-6xl mt-4'
-    >
+    <section id='newTechnologies' className='mx-auto max-w-6xl mt-4'>
       <div className='py-40 flex justify-center items-center flex-col gap-8'>
         <h2 className='text-4xl font-bold underline underline-offset-3 decoration-4 underline-offset-4 decoration-blue-500'>
           Nuevas tecnologías

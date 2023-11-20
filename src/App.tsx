@@ -1,4 +1,4 @@
-import { Navbar, ExpectedImpactItem } from './components';
+import { Navbar } from './components';
 import {
   DesignStages,
   ExpectedImpact,
@@ -16,10 +16,10 @@ function App() {
       <Home />
       <Introduction />
       <NewTechnologies />
-      {/*  <ExpectedImpact /> */}
+      <ExpectedImpact />
       <Objectives />
-      <ThesisForm />
       <DesignStages />
+      <ThesisForm />
     </>
   );
 }

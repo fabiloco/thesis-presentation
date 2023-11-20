@@ -40,10 +40,10 @@ export const SubStageItem: FC<SubStageItemProps> = ({
             <p className='font-mono text-white text-lg'>{tool}</p>
           </div>
         ))}
-        <div className='flex items-center'>
+        <div className='flex items-center h-48'>
           {showButtom && (
             <div
-              className='bg-blue-600 w-12 h-12 flex justify-center items-center mt-12 cursor-pointer'
+              className='bg-blue-600 w-12 h-12 flex justify-center items-center cursor-pointer'
               onClick={toggleOpen}
             >
               <IoMdAdd size='2em' color='#fff' />
@@ -51,9 +51,9 @@ export const SubStageItem: FC<SubStageItemProps> = ({
           )}
 
           {open && (
-            <div className='flex'>
+            <div className='flex gap-2 ml-2'>
               {representations.map((representation) => (
-                <img src={representation} />
+                <img className='w-32 h-32 object-cover' src={representation} />
               ))}
             </div>
           )}
