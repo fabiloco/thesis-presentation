@@ -130,7 +130,7 @@ export const DesignStages = () => {
           representations: [''],
         },
         {
-          title: '4.1.2. Apis car',
+          title: '4.1.2. Apis cor',
           tools: [],
           source: designStages6,
           isVideo: true,

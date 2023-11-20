@@ -1,47 +1,35 @@
-import { Carousel } from "flowbite-react";
-import ScrollCarousel from "scroll-carousel-react";
-
-type CarouselItemType = {
-  title: string;
-};
-
-const CarouselItem = ({ title }: CarouselItemType) => {
+export const Conclusions = () => {
   return (
-    <>
-      <div className="bg-blue-700 rounded h-36 w-48 flex justify-center items-center p-5">
-        <h3 className="z-20 text-white text-xl font-bold">{title}</h3>
+    <section id="conclusions" className="w-full mt-4">
+      <div className="pt-40 pb-28 flex justify-center items-center flex-col gap-8 bg-white z-30">
+        <h2 className="text-4xl font-bold underline underline-offset-3 decoration-4 underline-offset-4 decoration-blue-500">
+          Conclusiones
+        </h2>
       </div>
-    </>
-  );
-};
-
-export const ConclusionsCarousel = () => {
-  const data = [
-    "Capacitación continua",
-    "Inversión en software y hardware",
-    "Educación del cliente",
-    "Evaluación de ROI",
-    "Sensibilización y divulgación",
-    "Promoción de la sostenibilidad",
-  ];
-  return (
-    <>
-      <div className="mt-10">
-        <ScrollCarousel onReady={() => console.log("I am ready")}>
-          {/*   {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((item) => (
-          <div
-            key={item}
-            className="bg-blue-300/20 border-2 border-blue-300/70 rounded h-36 w-48"
-          >
-            {item}
-          </div>
-        ))} */}
-
-          {data.map((item) => (
-            <CarouselItem title={item} />
-          ))}
-        </ScrollCarousel>
+      <div className="flex justify-center items-center w-full h-fit bg-white z-30">
+        <div className="flex flex-col justify-center max-w-5xl h-full gap-10">
+          <p className="w-[812px] text-left text-lg">
+            Esta investigación destaca cómo herramientas tecnológicas, como
+            inteligencia artificial, realidad virtual e impresión 3D, han
+            transformado el diseño y la construcción, catalizando un crecimiento
+            significativo en la industria. Estas tecnologías no solo mejoran
+            eficiencia y calidad, sino que también tienen el potencial de
+            revolucionar la forma en que abordamos proyectos de arquitectura e
+            ingeniería.
+          </p>
+          <p className="w-[812px] text-left text-lg">
+            El objetivo va más allá de la observación; busca hacer accesibles
+            estas ventajas a todas las empresas y clientes del sector,
+            promoviendo la satisfacción compartida. Esta investigación
+            representa un paso hacia la transformación digital en la
+            construcción, visualizando un futuro donde la tecnología y la
+            innovación son fundamentales para entornos eficientes y sostenibles.
+            El camino hacia esta visión implica colaboración, educación continua
+            y la valiente adopción de herramientas tecnológicas, contribuyendo a
+            un mundo construido más sostenible.
+          </p>
+        </div>
       </div>
-    </>
+    </section>
   );
 };

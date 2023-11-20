@@ -1,5 +1,7 @@
 import { FC, useState } from 'react';
 
+import { AnimatePresence, motion } from 'framer-motion';
+
 import { IoMdAdd } from 'react-icons/io';
 
 import { SubStageItemProps } from '.';
@@ -17,7 +19,7 @@ export const SubStageItem: FC<SubStageItemProps> = ({
   const toggleOpen = () => isOpen((preveState) => !preveState);
 
   return (
-    <div className={`w-full h-full flex relative overflow: hidden;`}>
+    <div className={`w-full h-full flex relative`}>
       {isVideo ? (
         <video
           style={{ aspectRatio: '1' }}
@@ -34,7 +36,7 @@ export const SubStageItem: FC<SubStageItemProps> = ({
       )}
 
       <div className='bg-neutral-950 bg-opacity-50 z-20 w-full h-full px-8 flex flex-col justify-center'>
-        <h4 className='font-bold text-2xl mb-6  text-white'>{title}</h4>
+        <h4 className='font-bold text-2xl my-6  text-white'>{title}</h4>
         {tools.map((tool, index) => (
           <div key={index}>
             <p className='font-mono text-white text-lg'>{tool}</p>
@@ -50,13 +52,21 @@ export const SubStageItem: FC<SubStageItemProps> = ({
             </div>
           )}
 
-          {open && (
-            <div className='flex gap-2 ml-2'>
-              {representations.map((representation) => (
-                <img className='w-32 h-32 object-cover' src={representation} />
-              ))}
-            </div>
-          )}
+          <AnimatePresence>
+            {open && (
+              <div className='flex gap-2 ml-2'>
+                {representations.map((representation, index) => (
+                  <motion.img
+                    initial={{ opacity: 0, x: -100 * index }}
+                    animate={{ x: 0, opacity: 100 }}
+                    exit={{ opacity: 0, x: -100 * index }}
+                    className='w-32 h-32 object-cover'
+                    src={representation}
+                  />
+                ))}
+              </div>
+            )}
+          </AnimatePresence>
         </div>
       </div>
     </div>

@@ -6,3 +6,5 @@ export * from './Objectives';
 export * from './DesignStages';
 export * from './Survey';
 export * from './Encuesta';
+export * from './Conclusions';
+export * from './Recomendations';

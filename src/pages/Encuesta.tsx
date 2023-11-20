@@ -1,5 +1,7 @@
 import { FormDesplegableItem } from '../components/FormDesplegableItem';
 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 import image1 from '../assets/thesisForm/image1.png';
 import image2 from '../assets/thesisForm/image2.png';
 import image3 from '../assets/thesisForm/image3.png';
@@ -40,21 +42,18 @@ export const ThesisForm = () => {
         <h2 className='text-4xl font-bold underline underline-offset-3 decoration-4 underline-offset-4 decoration-blue-500'>
           Encuestas
         </h2>
-        <p className='w-[512px] text-center text-lg'>
-          En un mundo impulsado por la revolución digital del siglo XX, la
-          integración de tecnología digital ha transformado la arquitectura. La
-          convergencia de lo dinámico y lo digital ha potenciado la creatividad,
-          cambiando la forma en que los arquitectos conciben proyectos. El
-          rápido desarrollo de herramientas digitales ha sido fundamental en
-          este cambio.
-        </p>
       </div>
       <div className='flex justify-center items-center w-full bg-white z-30'>
         <div className='flex gap-4 flex-col w-full max-w-7xl'>
           {data.map(({ q, image }) => (
             <FormDesplegableItem header={q} textColor='white'>
               <div className='flex justify-center items-center'>
-                <img className='w-4/5' src={image} alt='' />
+                <LazyLoadImage
+                  className='w-4/5'
+                  width={'100%'}
+                  src={image}
+                  alt=''
+                />
               </div>
             </FormDesplegableItem>
           ))}
